@@ -1,0 +1,209 @@
+#about {
+  background-color: rgb(35, 35, 35);
+  padding: 50px 0px;
+  color: white;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 45px;
+}
+
+p {
+  font-family: 'Popins', sans-serif;
+}
+
+.profile-skils {
+  display: flex;
+}
+
+.skills-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  justify-content: space-evenly;
+
+  .skills {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    img {
+      height: 80%;
+      width: 70%;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+    }
+  }
+}
+
+.grid-one {
+  display: grid;
+  justify-content: center;
+  gap: 6px;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    'title1 title2 title2 title2'
+    'presentation lt-grid back-grid front-grid';
+
+  .presentation-title1 {
+    grid-area: title1;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 45px;
+  }
+
+  .profile-description {
+    grid-area: presentation;
+    font-family: 'Popins', sans-serif;
+    padding-right: 20px;
+  }
+  .skills-title {
+    grid-area: title2;
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 30px;
+    padding-top: 41px;
+    margin-bottom: 0px;
+  }
+}
+.grid-two {
+  grid-area: lt-grid;
+  display: grid;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas:
+    'language language'
+    'ruby js'
+    'git github'
+    'heroku photoshop';
+
+  font-size: 9px;
+  text-align: center;
+  justify-items: center;
+  align-items: end;
+  justify-content: center;
+}
+
+#lt {
+  grid-area: language;
+  font-size: 14px;
+  font-family: 'Popins', sans-serif;
+  font-weight: 550;
+  text-align: center;
+  padding: 10px;
+}
+#front {
+  grid-area: front;
+  font-size: 14px;
+  font-family: 'Popins', sans-serif;
+  font-weight: 550;
+  text-align: center;
+  padding: 10px;
+}
+#back {
+  grid-area: back;
+  font-size: 14px;
+  font-family: 'Popins', sans-serif;
+  font-weight: 550;
+  text-align: center;
+  padding: 10px;
+}
+.grid-four {
+  grid-area: front-grid;
+  display: grid;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1.5px;
+  border-image-source: linear-gradient(to left, #edf90a, #ef7e15);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas:
+    'front front'
+    'html css'
+    'stimulus react'
+    'bootstrap figma';
+
+  font-size: 9px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.grid-three {
+  grid-area: back-grid;
+  display: grid;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1.5px;
+  border-image-source: linear-gradient(to left, #2adaed, #3ad58d);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    'back back'
+    'rails postgresql'
+    '. .'
+    '. .'
+    '. .';
+  font-size: 9px;
+  text-align: center;
+  align-self: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#skills-ruby {
+  grid-area: ruby;
+}
+#skills-js {
+  grid-area: js;
+}
+#skills-html {
+  grid-area: html;
+}
+#skills-css {
+  grid-area: css;
+}
+#skills-rails {
+  grid-area: rails;
+}
+#skills-react {
+  grid-area: react;
+}
+#skills-postgresql {
+  grid-area: postgresql;
+}
+#skills-bootstrap {
+  grid-area: bootstrap;
+}
+#skills-heroku {
+  grid-area: heroku;
+}
+#skills-photoshop {
+  grid-area: photoshop;
+}
+#skills-stimulus {
+  grid-area: stimulus;
+  align-self: end;
+}
+#skills-figma {
+  grid-area: figma;
+}
+#skills-git {
+  grid-area: git;
+}
+#skills-github {
+  grid-area: github;
+}

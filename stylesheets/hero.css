@@ -1,0 +1,124 @@
+#particles-js {
+  width: 100%;
+  height: 815px;
+  background-image: url('../images/contact-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.name {
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 200;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Phudu', sans-serif;
+  white-space: nowrap;
+
+  span {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  .heading_line-2 {
+    font-size: 105px;
+    line-height: 0.7;
+    margin-bottom: 93px;
+  }
+}
+
+.scroll {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 45%;
+  left: 1.5%;
+}
+.cta {
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 31px;
+
+  #action {
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 21px;
+    padding-top: 24px;
+    text-decoration: none;
+    position: relative;
+    left: -45%;
+  }
+
+  #action:hover {
+    background-color: white;
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 1px solid white;
+    transition: 0.4s;
+    border-radius: 40px;
+    padding: 21px;
+    padding-top: 24px;
+    text-decoration: none;
+    position: relative;
+    left: -45%;
+  }
+
+  #contact-intro {
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 21px;
+    padding-top: 24px;
+    text-decoration: none;
+    position: relative;
+    left: 45%;
+  }
+
+  #contact-intro:hover {
+    background-color: white;
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 1px solid white;
+    transition: 0.4s;
+    border-radius: 40px;
+    padding: 21px;
+    padding-top: 24px;
+    text-decoration: none;
+    position: relative;
+    left: 45%;
+  }
+}
