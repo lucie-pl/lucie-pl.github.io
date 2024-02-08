@@ -11,10 +11,16 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat&family=Protest+Strike&family=Poppins&family=Foldit&family=Genos&family=Phudu:wght@800&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat&family=Protest+Strike&family=Poppins&family=Foldit&family=Genos&family=Phudu:wght@800&family=Rubik+80s+Fade&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -28,7 +34,9 @@
       <div class="scroll">⟻ SCROLL</div>
       <div class="cta">
         <a id="action" href="#portfolio">VIEW MY WORK</a>
-        <a id="contact-intro" href="mailto:lucie.plantier@protonmail.com"><i class="fas fa-paper-plane"></i> CONTACT ME</a>
+        <a id="contact-intro" href="mailto:lucie.plantier@protonmail.com"
+          ><i class="fas fa-paper-plane"></i> CONTACT ME</a
+        >
       </div>
     </div>
 
@@ -56,56 +64,97 @@
       <section id="about">
         <div class="container">
           <!-- About me content -->
-          <h2 class="section-title">HEY THERE! 👋</h2>
-          <div class="profile-skills">
+
+          <div class="grid-one">
+            <h2 class="presentation-title1">HEY THERE! 👋</h2>
             <p class="profile-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-              sequi vero numquam sint ea consequatur obcaecati incidunt natus vel
-              voluptate illum totam veritatis voluptas accusamus doloremque nobis
-              error, quae necessitatibus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus sequi vero numquam sint ea consequatur obcaecati
+              incidunt natus vel voluptate illum totam veritatis voluptas
+              accusamus doloremque nobis error, quae necessitatibus.
             </p>
-            <div class="skills">
-              <div class="skills-row">
-                <div class="skills">
-                  <img src="/images/icons8-html.svg" alt="html icon" />
-                  <p>HTML</p>
-                </div>
-                <div class="skills">
-                  <img src="/images/icons8-css.svg" alt="css icon" />
-                  <p>CSS</p>
-                </div>
-                <div class="skills">
-                  <img
-                    src="/images/icons8-ruby-programming-language.svg"
-                    alt="ruby icon"
-                  />
-                  <p>RUBY</p>
-                </div>
-                <div class="skills">
-                  <img src="/images/icons8-ruby-on-rails.svg" alt="rAILS icon" />
-                  <p>RUBY ON RAILS</p>
-                </div>
-                <div class="skills">
-                  <img
-                    src="/images/icons8-postgresql.svg"
-                    alt="postgresql icon"
-                  />
-                  <p>POSTGRESQL</p>
-                </div>
-                <div class="skills">
-                  <img src="/images/icons8-javascript.svg" alt="js icon" />
-                  <p>JAVASCRIPT</p>
-                </div>
-                <div class="skills">
-                  <img src="/images/icons8-bootstrap.svg" alt="bootstrap icon" />
-                  <p>BOOTSTRAP</p>
-                </div>
-                <div class="skills">
-                  <img src="/images/icons8-react.svg" alt="react icon" />
-                  <p>REACT</p>
-                </div>
+            <h2 class="skills-title">SKILLS</h2>
+
+            <div class="grid-two">
+              <h3 id="lt">Languages & tools</h3>
+              <div id="skills-ruby">
+                <img
+                  src="/images/icons8-ruby-programming-language.svg"
+                  alt="ruby icon"
+                />
+                <p>RUBY</p>
+              </div>
+              <div id="skills-js">
+                <img src="/images/icons8-javascript.svg" alt="js icon" />
+                <p>JAVASCRIPT</p>
+              </div>
+              <div id="skills-git">
+                <img src="/images/icons8-git.svg" alt="git icon" />
+                <p>GIT</p>
+              </div>
+              <div id="skills-github">
+                <img src="/images/icons8-github-white.svg" alt="github icon" />
+                <p>GITHUB</p>
+              </div>
+              <div id="skills-heroku">
+                <img src="/images/icons8-heroku.svg" alt="heroku icon" />
+                <p>HEROKU</p>
+              </div>
+              <div id="skills-photoshop">
+                <img src="/images/icons8-photoshop.svg" alt="photoshop icon" />
+                <p>PHOTOSHOP</p>
               </div>
             </div>
+
+            <div class="grid-three">
+              <h3 id="back">Back-End</h3>
+              <div id="skills-rails">
+                <img src="/images/icons8-ruby-on-rails.svg" alt="rAILS icon" />
+                <p>RUBY ON RAILS</p>
+              </div>
+              <div id="skills-postgresql">
+                <img
+                  src="/images/icons8-postgresql.svg"
+                  alt="postgresql icon"
+                />
+                <p>POSTGRESQL</p>
+              </div>
+            </div>
+
+            <div class="grid-four">
+              <h3 id="front">Front-End</h3>
+              <div id="skills-html">
+                <img src="/images/icons8-html.svg" alt="html icon" />
+                <p>HTML</p>
+              </div>
+              <div id="skills-css">
+                <img src="/images/icons8-css.svg" alt="css icon" />
+                <p>CSS</p>
+              </div>
+              <div id="skills-stimulus">
+                <img
+                  src="/images/icon-stimulus.png"
+                  alt="stimulus icon"
+                  width="40px"
+                  height="40px"
+                  color="red"
+                />
+                <p>STIMULUS</p>
+              </div>
+              <div id="skills-react">
+                <img src="/images/icons8-react.svg" alt="react icon" />
+                <p>REACT</p>
+              </div>
+              <div id="skills-bootstrap">
+                <img src="/images/icons8-bootstrap.svg" alt="bootstrap icon" />
+                <p>BOOTSTRAP</p>
+              </div>
+              <div id="skills-figma">
+                <img src="/images/icons8-figma.svg" alt="figma icon" />
+                <p>FIGMA</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -113,32 +162,62 @@
         <!-- Portfolio items -->
         <div class="container">
           <h2 class="section-title">SOME OF MY WORK</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic et voluptatibus autem magni aut, pariatur nostrum cupiditate, officiis sint aliquam corrupti, nam commodi. Rerum ipsum recusandae minus pariatur et! Minus?</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic et
+            voluptatibus autem magni aut, pariatur nostrum cupiditate, officiis
+            sint aliquam corrupti, nam commodi. Rerum ipsum recusandae minus
+            pariatur et! Minus?
+          </p>
           <div class="project-cards">
-            <div class="projects" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.leparisien.fr%2Fresizer%2FztIVESF21y49LlQm8kYGhWGSZAA%3D%2F932x582%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fleparisien%2FWT6PPXRX6VCSNAQ7FUZCWBYOQM.jpg&f=1&nofb=1&ipt=baa18e0c3127cbcc7418c0829f3d7c2370d647eba012a9391003a6f2a3ea6333&ipo=images);">
+            <div
+              class="projects"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.3)
+                  ),
+                  url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.leparisien.fr%2Fresizer%2FztIVESF21y49LlQm8kYGhWGSZAA%3D%2F932x582%2Fcloudfront-eu-central-1.images.arcpublishing.com%2Fleparisien%2FWT6PPXRX6VCSNAQ7FUZCWBYOQM.jpg&f=1&nofb=1&ipt=baa18e0c3127cbcc7418c0829f3d7c2370d647eba012a9391003a6f2a3ea6333&ipo=images);
+              "
+            >
               MOTIONEXP.
             </div>
             <!-- <p>Stack: Ruby on Rails, PostgreSQL, Javascript, Stimulus, Figma and Heroku</p> -->
 
-            <div class="projects" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fbeev.co%2Fwp-content%2Fuploads%2F2019%2F10%2FZoe-Dynamique.jpg%3Fw%3D4950%26ssl%3D1&f=1&nofb=1&ipt=13a602b610b52bd31af16b1285262a64edb1259a18742104a25581f630a4c68a&ipo=images);">
+            <div
+              class="projects"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.3)
+                  ),
+                  url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fbeev.co%2Fwp-content%2Fuploads%2F2019%2F10%2FZoe-Dynamique.jpg%3Fw%3D4950%26ssl%3D1&f=1&nofb=1&ipt=13a602b610b52bd31af16b1285262a64edb1259a18742104a25581f630a4c68a&ipo=images);
+              "
+            >
               E-CAR
             </div>
 
-            <div class="projects" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets-global.website-files.com%2F58531d7256ce728d0ed5fcf1%2F58531d7356ce728d0ed60397_Template-Slideshow-1%25402x.jpg&f=1&nofb=1&ipt=cd27da7a97b9ab7adfff5315bed81ac1490c78d86354c68968a3fb8570e397eb&ipo=images);">
+            <div
+              class="projects"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.3)
+                  ),
+                  url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets-global.website-files.com%2F58531d7256ce728d0ed5fcf1%2F58531d7356ce728d0ed60397_Template-Slideshow-1%25402x.jpg&f=1&nofb=1&ipt=cd27da7a97b9ab7adfff5315bed81ac1490c78d86354c68968a3fb8570e397eb&ipo=images);
+              "
+            >
               CUISINATOR
             </div>
-
           </div>
         </div>
-
       </section>
       <section id="contact">
         <div class="container">
           <!-- Contact form -->
           <h2 class="section-title">LET'S CONNECT</h2>
           <p>
-            Feel free to contact me if you have questions or want to work with me
-            !<br>
+            Feel free to contact me if you have questions or want to work with
+            me !<br />
             Leave your details and I'll get back to you as soon as possible.
           </p>
         </div>
@@ -150,11 +229,16 @@
       <!-- Footer content -->
       <div class="footer">
         <div class="footer-links">
-          <a href="https://github.com/lucie-pl"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/lucie-plantier/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/lucie-pl"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/lucie-plantier/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
         <div class="footer-copyright">
-          MADE WITH <i class="far fa-heart"></i> IN MONTREAL BY <span>LUCIE PLANTIER</span>, © 2024.
+          MADE WITH <i class="far fa-heart"></i> IN MONTREAL BY
+          <span>LUCIE PLANTIER</span>, © 2024.
         </div>
       </div>
     </footer>
