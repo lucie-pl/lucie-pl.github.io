@@ -1,9 +1,53 @@
 #contact {
   background-image: url('/images/contact-background.jpeg');
-  height: 300px;
+  height: auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0px;
+}
+
+#grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'title photo'
+    'text photo'
+    'links photo';
+  padding: 50px;
+
+  p {
+    grid-area: text;
+    font-family: 'Popins', sans-serif;
+    text-align: justify;
+    padding-left: 50px;
+  }
+}
+
+.contact-title {
+  grid-area: title;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+.links {
+  grid-area: links;
+  text-align: center;
+}
+.links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 45px;
+  padding: 0px 20px;
+}
+.links a:hover {
+  opacity: 0.7;
+}
+
+img {
+  grid-area: photo;
+  display: flex;
+  justify-self: center;
 }
