@@ -1,4 +1,4 @@
-/* SLIDER PROJECTS */
+/* SLIDER PROJECTS MOTIONEXP.*/
 const $ = (selector) => {
   return document.querySelector(selector);
 };
@@ -91,14 +91,21 @@ slide = (element) => {
   }
 };
 
-const slider = $('.photo-list');
-// TODO activate swipe for MOBILE
-// const swipe = new Hammer($('.swipe'));
+// const slider = $('.photo-list');
+// // TODO activate swipe for MOBILE
+// // const swipe = new Hammer($('.swipe'));
 
-slider.onclick = (event) => {
-  slide(event.target);
-};
+// slider.onclick = (event) => {
+//   slide(event.target);
+// };
 
+// function hello() {
+//   console.log('Hello');
+// }
+// const previousImg = document.querySelector('btn-prev');
+// previousImg.addEventListener('click', (e) => {
+//   console.log(hello);
+// });
 // swipe.on('swipeleft', (ev) => {
 //   next();
 // });
@@ -106,3 +113,35 @@ slider.onclick = (event) => {
 // swipe.on('swiperight', (ev) => {
 //   prev();
 // });
+
+/* SLIDER PROJECTS E-CAR */
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+function showSlides(n) {
+  let i;
+  const slides = document.querySelectorAll('.slides');
+  const dots = document.querySelectorAll('.dot');
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '');
+  }
+
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += ' active';
+}
