@@ -225,7 +225,7 @@
         </div>
         <div class="n-projects">
           <div id="motionexp">
-            <div class="project-presentation">
+            <div class="project-presentation-left">
               <h3>MOTION EXP.</h3>
               <p>
                 <strong>MotionExp.</strong> is a prototype of a mobile web app
@@ -254,6 +254,8 @@
               </p>
             </div>
             <!-- FOR MOBILE <div class="swipe"></div> -->
+            <a class="btn-prev" onclick="prev()">&#10094;</a>
+            <a class="btn-next" onclick="next()">&#10095;</a>
             <ul class="photo-list">
               <li class="hide">
                 <img
@@ -316,7 +318,39 @@
             <script src="https://hammerjs.github.io/dist/hammer.js"></script>
           </div>
           <div id="e-car">
-            <div class="project-presentation">
+            <div class="slideshow">
+                <div class="slides">
+                  <img src="./images/E-Car_Homepage.png" alt="e-car" height="380px">
+                </div>
+                <div class="slides">
+                  <img src="./images/E-Car_Search.png" alt="e-car" height="380px">
+                </div>
+                <div class="slides">
+                  <img src="./images/E-Car_Car-showpage.png" alt="e-car" height="380px">
+                </div>
+                <div class="slides">
+                  <img src="./images/E-Car_User-profile.png" alt="e-car" height="380px">
+                </div>
+                <div class="slides">
+                  <img src="./images/E-Car-Owner-profile.png" alt="e-car" height="380px">
+                </div>
+                <div class="slides">
+                  <img src="./images/E-Car_Owner-request-status.png" alt="e-car" height="380px">
+                </div>
+                <div class="slides">
+                  <img src="./images/E-Car_Owner-request-update.png" alt="e-car" height="380px">
+                </div>
+                <div id="dots">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+              </div>
+              </div>
+            <div class="project-presentation-right">
               <h3>E-CAR</h3>
               <p>
                 <strong>E-Car</strong> is a web application prototype that
@@ -348,15 +382,24 @@
       </section>
 
       <section id="contact">
-        <div class="container">
           <!-- Contact form -->
-          <h2 class="section-title">LET'S CONNECT</h2>
-          <p>
-            Feel free to contact me if you have questions or want to work with
-            me !<br />
-            Leave your details and I'll get back to you as soon as possible.
-          </p>
-        </div>
+          <div id="grid-contact">
+              <h2 class="contact-title">LET'S CONNECT </h2>
+              <p>
+                Feel free to contact me if you have questions or want to work with
+                me !<br />
+                Leave your details and I'll get back to you as soon as possible.
+              </p>
+              <div class="links">
+                <a href="https://github.com/lucie-pl"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/lucie-plantier/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+              <img src="./images/Photo-website.png" alt="photo" height="250px">
+            </div>
         <!-- TODO: insert a form, wether using rails or Formspree or Netlify form -->
       </section>
     </main>
@@ -364,14 +407,6 @@
     <footer>
       <!-- Footer content -->
       <div class="footer">
-        <div class="footer-links">
-          <a href="https://github.com/lucie-pl"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/lucie-plantier/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
         <div class="footer-copyright">
           MADE WITH <i class="far fa-heart"></i> IN MONTREAL BY
           <span>LUCIE PLANTIER</span>, © 2024.
