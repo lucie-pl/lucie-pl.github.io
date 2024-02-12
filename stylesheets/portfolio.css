@@ -23,3 +23,123 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+#motionexp {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'text images';
+  background-color: rgba(237, 32, 49, 0.8);
+}
+
+.project-presentation {
+  h3 {
+    font-family: 'Protest Strike', sans-serif;
+    color: black;
+  }
+  p {
+    font-family: 'Popins', sans-serif;
+  }
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: justify;
+  .stack {
+    display: flex;
+    flex-direction: wrap;
+    list-style: none;
+    padding-left: 0;
+    li {
+      font-size: 12px;
+      font-weight: 700;
+      display: inline;
+      padding: 8px;
+      margin: 5px;
+      color: black;
+      border: 1px solid black;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+    }
+  }
+}
+.photo-list {
+  grid-area: images;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -100%);
+}
+.photo-list li {
+  list-style-type: none;
+
+  width: 250px;
+  height: 200px;
+  opacity: 0.8;
+  position: absolute;
+  left: 50%;
+  margin-left: -00px;
+  border-radius: 2px;
+  /* background: #9c89b8; */
+  transition: transform 1s, opacity 1s;
+  text-align: center;
+}
+.photo-list .act {
+  opacity: 1;
+}
+.photo-list .prev,
+.photo-list .next {
+  cursor: pointer;
+}
+.photo-list .prev {
+  transform: translateX(-200px) scale(0.9);
+}
+
+.photo-list .next {
+  transform: translateX(200px) scale(0.9);
+}
+
+.photo-list .hide,
+.photo-list .new-next,
+.photo-list .new-next-2,
+.photo-list .new-next-3,
+.photo-list .new-next-4 {
+  opacity: 0;
+  transition: opacity 0.2s, transform 1.5s;
+}
+.photo-list .hide {
+  transform: translateX(-420px) scale(0.85);
+}
+
+.photo-list .new-next,
+.photo-list .new-next-2,
+.photo-list .new-next-3,
+.photo-list .new-next-4 {
+  transform: translateX(420px) scale(0.85);
+}
+
+.swipe {
+  width: 270px;
+  height: 200px;
+  position: absolute;
+  background-color: green;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#e-car {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'images text';
+  background-color: rgba(105, 220, 152, 0.8);
+}

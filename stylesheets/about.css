@@ -48,7 +48,7 @@ p {
   display: grid;
   justify-content: center;
   gap: 6px;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-template-rows: 2fr;
   grid-template-areas:
     'title1 title2 title2 title2'
