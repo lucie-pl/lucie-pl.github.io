@@ -99,13 +99,9 @@ slide = (element) => {
 //   slide(event.target);
 // };
 
-// function hello() {
-//   console.log('Hello');
-// }
 // const previousImg = document.querySelector('btn-prev');
-// previousImg.addEventListener('click', (e) => {
-//   console.log(hello);
-// });
+// previousImg.addEventListener('click', (e) => {});
+
 // swipe.on('swipeleft', (ev) => {
 //   next();
 // });

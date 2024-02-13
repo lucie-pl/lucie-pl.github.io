@@ -2,6 +2,8 @@
   background-color: rgb(246, 240, 232);
 }
 
+/* MOTION EXP. SECTION : DESKTOP */
+
 #motionexp {
   position: relative;
   height: auto;
@@ -15,6 +17,7 @@
 }
 
 .project-presentation-left {
+  grid-area: text;
   h3 {
     font-family: 'Protest Strike', sans-serif;
     color: black;
@@ -140,6 +143,7 @@
   opacity: 0;
 }
 
+/* E-CAR SECTION : DESKTOP */
 #e-car {
   position: relative;
   height: auto;
@@ -156,11 +160,6 @@
   top: 11%;
   left: 7%;
 }
-/* #laptop-fame {
-  position: relative;
-  top: 50%;
-  left: 20%;
-} */
 
 .slideshow {
   max-width: 1000px;
@@ -227,5 +226,114 @@ img {
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
     }
+  }
+}
+
+/* MOTION EXP. SECTION : MOBILE */
+@media screen and (max-width: 480px) {
+  #motionexp {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 50px 40px 50px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    grid-template-areas:
+      'images'
+      'text';
+    background-color: rgba(237, 32, 49, 0.8);
+  }
+
+  .photo-list {
+    grid-area: images;
+    height: 50px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    transform: translate(9vh, 0%);
+  }
+
+  .photo-list img {
+    height: 290px;
+  }
+  .photo-list li {
+    list-style-type: none;
+
+    width: 250px;
+    height: 200px;
+    opacity: 0.8;
+    position: absolute;
+    left: 50%;
+    margin-left: -00px;
+    border-radius: 2px;
+    transition: transform 1s, opacity 1s;
+    text-align: center;
+  }
+  .photo-list .prev {
+    transform: translateX(-138px) scale(0.7);
+  }
+
+  .photo-list .next {
+    transform: translateX(108px) scale(0.7);
+  }
+  .project-presentation-left {
+    grid-area: text;
+    padding-top: 315px;
+  }
+  .btn-prev {
+    position: absolute;
+    top: 28%;
+    left: 14%;
+  }
+
+  .btn-next {
+    position: absolute;
+    top: 28%;
+    left: 80%;
+  }
+}
+
+/* E-CAR SECTION : MOBILE */
+@media screen and (max-width: 480px) {
+  #e-car {
+    position: relative;
+    height: auto;
+    padding: 50px 40px 50px 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    grid-template-areas:
+      'images'
+      'text';
+    background-color: rgba(237, 202, 125, 0.8);
+  }
+
+  #laptop-frame img {
+    position: relative;
+    top: 11%;
+    left: 7%;
+    size: 200px;
+  }
+  .slideshow {
+    max-width: 100px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .slides img {
+    height: 55vw;
+  }
+
+  #dots {
+    display: flex;
+  }
+  .dot {
+    padding-right: 10px;
   }
 }

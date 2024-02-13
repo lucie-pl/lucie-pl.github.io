@@ -17,3 +17,9 @@
 .footer .fa-heart {
   color: #bc3030;
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 9px;
+  }
+}

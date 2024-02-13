@@ -51,3 +51,29 @@ img {
   display: flex;
   justify-self: center;
 }
+
+@media screen and (max-width: 480px) {
+  #contact {
+    img {
+      display: none;
+    }
+
+    #grid-contact {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        'title'
+        'text'
+        'links';
+      padding: 50px;
+
+      p {
+        grid-area: text;
+        font-family: 'Popins', sans-serif;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+  }
+}
