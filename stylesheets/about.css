@@ -48,13 +48,13 @@ p {
   display: grid;
   justify-content: center;
   gap: 6px;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2.5fr 1fr 1fr 1fr;
   grid-template-rows: 2fr;
   grid-template-areas:
     'title1 title2 title2 title2'
     'presentation lt-grid back-grid front-grid';
 
-  .presentation-title1 {
+  .presentation-title {
     grid-area: title1;
     text-align: center;
     padding-bottom: 15px;
@@ -66,6 +66,8 @@ p {
     grid-area: presentation;
     font-family: 'Popins', sans-serif;
     padding-right: 20px;
+    margin: auto;
+    text-align: justify;
   }
   .skills-title {
     grid-area: title2;
@@ -94,8 +96,9 @@ p {
   font-size: 9px;
   text-align: center;
   justify-items: center;
-  align-items: end;
+  align-self: center;
   justify-content: center;
+  padding: 10px 0px;
 }
 
 #lt {
@@ -122,26 +125,6 @@ p {
   text-align: center;
   padding: 10px;
 }
-.grid-four {
-  grid-area: front-grid;
-  display: grid;
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 1.5px;
-  border-image-source: linear-gradient(to left, #edf90a, #ef7e15);
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr;
-  grid-template-areas:
-    'front front'
-    'html css'
-    'stimulus react'
-    'bootstrap figma';
-
-  font-size: 9px;
-  text-align: center;
-  align-self: flex-start;
-}
-
 .grid-three {
   grid-area: back-grid;
   display: grid;
@@ -160,8 +143,28 @@ p {
   font-size: 9px;
   text-align: center;
   align-self: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  justify-items: center;
+  padding: 10px 0px;
+}
+.grid-four {
+  grid-area: front-grid;
+  display: grid;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 1.5px;
+  border-image-source: linear-gradient(to left, #edf90a, #ef7e15);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas:
+    'front front'
+    'html css'
+    'stimulus react'
+    'bootstrap figma';
+
+  font-size: 9px;
+  text-align: center;
+  align-self: center;
+  justify-items: center;
 }
 
 #skills-ruby {

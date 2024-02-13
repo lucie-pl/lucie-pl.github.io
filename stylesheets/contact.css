@@ -20,7 +20,7 @@
   p {
     grid-area: text;
     font-family: 'Popins', sans-serif;
-    text-align: justify;
+    text-align: center;
     padding-left: 50px;
   }
 }
