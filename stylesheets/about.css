@@ -1,3 +1,4 @@
+/* DESKTOP DISPLAY */
 #about {
   background-color: rgb(35, 35, 35);
   padding: 50px 0px;
@@ -209,4 +210,35 @@ p {
 }
 #skills-github {
   grid-area: github;
+}
+
+/* MOBILE DISPLAY */
+@media screen and (max-width: 480px) {
+  #about {
+    padding: 45px 0;
+  }
+  .grid-one {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+
+    .presentation-title {
+      font-size: 34px;
+      padding-bottom: 12px;
+    }
+    .profile-description {
+      padding-right: 0px;
+    }
+  }
+  .grid-two {
+    align-self: auto;
+    margin-bottom: 12px;
+  }
+  .grid-three {
+    align-self: auto;
+    margin-bottom: 12px;
+  }
+  .grid-four {
+    align-self: auto;
+  }
 }

@@ -1,9 +1,13 @@
+/* DESKTOP DISPLAY*/
 #portfolio {
   background-color: rgb(246, 240, 232);
 }
 
-/* MOTION EXP. SECTION : DESKTOP */
+.section-title {
+  padding: 25px 0;
+}
 
+/* MOTION EXP. SECTION : DESKTOP */
 #motionexp {
   position: relative;
   height: auto;
@@ -86,7 +90,7 @@
 .photo-list li {
   list-style-type: none;
 
-  width: 250px;
+  width: 170px;
   height: 200px;
   opacity: 0.8;
   position: absolute;
@@ -228,8 +232,13 @@ img {
     }
   }
 }
-
-/* MOTION EXP. SECTION : MOBILE */
+/** MOBILE DISPLAY **/
+@media screen and (max-width: 480px) {
+  .section-title {
+    padding: 15px 0;
+  }
+}
+/* MOTION EXP. SECTION : MOBILE DISPLAY */
 @media screen and (max-width: 480px) {
   #motionexp {
     position: relative;
@@ -294,7 +303,7 @@ img {
   }
 }
 
-/* E-CAR SECTION : MOBILE */
+/* E-CAR SECTION : MOBILE DISPLAY */
 @media screen and (max-width: 480px) {
   #e-car {
     position: relative;

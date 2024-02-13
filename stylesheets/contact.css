@@ -1,12 +1,11 @@
 #contact {
-  background-image: url('/images/contact-background.jpeg');
-  height: auto;
+  background-image: url('/images/background-contact.jpg');
+  /* height: auto; */
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #grid-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,6 +51,7 @@ img {
   justify-self: center;
 }
 
+/* MOBILE DISPLAY */
 @media screen and (max-width: 480px) {
   #contact {
     img {
@@ -59,13 +59,9 @@ img {
     }
 
     #grid-contact {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        'title'
-        'text'
-        'links';
+      display: flex;
+      flex-direction: column;
+
       padding: 50px;
 
       p {

@@ -18,6 +18,7 @@
   color: #bc3030;
 }
 
+/* MOBILE DISPLAY */
 @media screen and (max-width: 480px) {
   .footer {
     font-size: 9px;
