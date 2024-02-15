@@ -81,58 +81,88 @@
 }
 .photo-list {
   grid-area: images;
-  height: 200px;
-  position: absolute;
+  height: auto;
+  /* position: absolute;
   top: 50%;
   left: 59%;
-  transform: translate(-390%, -100%);
+  transform: translate(-390%, -100%); */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  .showing {
+    display: flex;
+    /* justify-content: center; */
+  }
 }
 .photo-list li {
   list-style-type: none;
-
-  width: 170px;
-  height: 200px;
+  /* display: inline; */
+  width: 130px;
+  height: 20px;
   opacity: 0.8;
-  position: absolute;
-  left: 50%;
+  /* position: absolute;
+  left: 50%; */
   margin-left: -00px;
   border-radius: 2px;
   /* background: #9c89b8; */
   transition: transform 1s, opacity 1s;
   text-align: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
 }
 .photo-list .act {
   opacity: 1;
+
+  img {
+    transform: translate(-18%, -45%);
+  }
 }
 .photo-list .prev,
 .photo-list .next {
   cursor: default;
 }
 .photo-list .prev {
-  transform: translateX(-200px) scale(0.9);
+  img {
+    transform: translate(-50%, -45%) scale(0.9);
+  }
 }
 
 .photo-list .next {
-  transform: translateX(200px) scale(0.9);
+  img {
+    transform: translate(15%, -45%) scale(0.9);
+  }
 }
 
-.photo-list .hide,
+/* .photo-list .hide,
 .photo-list .new-next,
 .photo-list .new-next-2,
 .photo-list .new-next-3,
 .photo-list .new-next-4 {
   opacity: 0;
   transition: opacity 0.1s, transform 1.5s;
-}
+} */
 .photo-list .hide {
-  transform: translateX(0px) scale(0.85);
+  img {
+    opacity: 0;
+    transform: translate(-17%, -45%) scale(0.85);
+    transition: opacity 0.1s, transform 1.5s;
+  }
 }
 
 .photo-list .new-next,
 .photo-list .new-next-2,
 .photo-list .new-next-3,
 .photo-list .new-next-4 {
-  transform: translateX(0px) scale(0.85);
+  img {
+    opacity: 0;
+    transform: translate(-17%, -45%) scale(0.85);
+    transition: opacity 0.1s, transform 1.5s;
+  }
 }
 
 .swipe {
