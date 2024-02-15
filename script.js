@@ -4,16 +4,10 @@ const $ = (selector) => {
 };
 
 function next() {
-  // if ($('.hide')) {
-  //   $('.hide').remove();
-  // }
-
   /* Step */
 
-  if ($('.prev')) {
-    $('.prev').classList.add('hide');
-    $('.prev').classList.remove('prev');
-  }
+  $('.prev').classList.add('hide');
+  $('.prev').classList.remove('prev');
 
   $('.act').classList.add('prev');
   $('.act').classList.remove('act');
@@ -36,29 +30,10 @@ function next() {
 
   $('.hide').classList.add('new-next-4');
   $('.hide').classList.remove('hide');
-
-  // const addedEl = document.createElement('li');
-
-  // $('.photo-list').appendChild(addedEl);
-  // addedEl.classList.add('next', 'new-next');
 }
 
 function prev() {
-  // $('.new-next').remove();
-
   /* Step */
-  $('.next').classList.add('new-next');
-  $('.next').classList.remove('next');
-
-  $('.act').classList.add('next');
-  $('.act').classList.remove('act');
-
-  $('.prev').classList.add('act');
-  $('.prev').classList.remove('prev');
-
-  $('.hide').classList.add('prev');
-  $('.hide').classList.remove('hide');
-
   $('.new-next-4').classList.add('hide');
   $('.new-next-4').classList.remove('new-next-4');
 
@@ -70,6 +45,18 @@ function prev() {
 
   $('.new-next').classList.add('new-next-2');
   $('.new-next').classList.remove('new-next');
+
+  $('.next').classList.add('new-next');
+  $('.next').classList.remove('next');
+
+  $('.act').classList.add('next');
+  $('.act').classList.remove('act');
+
+  $('.prev').classList.add('act');
+  $('.prev').classList.remove('prev');
+
+  $('.hide').classList.add('prev');
+  $('.hide').classList.remove('hide');
 
   /* New Prev */
 

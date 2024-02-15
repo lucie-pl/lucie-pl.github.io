@@ -70,51 +70,65 @@
 
 .btn-prev {
   position: absolute;
-  top: 49%;
-  left: 50%;
+  top: 50%;
+  left: 49%;
 }
 
 .btn-next {
   position: absolute;
-  top: 49%;
-  left: 96%;
+  top: 50%;
+  left: 95%;
 }
 .photo-list {
   grid-area: images;
-  height: 200px;
-  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+   height: 200px;
   top: 50%;
   left: 59%;
-  transform: translate(-390%, -100%);
+  transform: translate(-390%, -100%); */
+  img {
+    height: 350px;
+    transition: transform 1s, opacity 1s;
+  }
 }
-.photo-list li {
+/* .photo-list li {
   list-style-type: none;
-
-  width: 170px;
-  height: 200px;
   opacity: 0.8;
   position: absolute;
   left: 50%;
   margin-left: -00px;
   border-radius: 2px;
-  /* background: #9c89b8; */
   transition: transform 1s, opacity 1s;
   text-align: center;
-}
+} */
 .photo-list .act {
   opacity: 1;
+  img {
+    height: 350px;
+  }
 }
 .photo-list .prev,
 .photo-list .next {
   cursor: default;
+
+  img {
+    transform: scale(0.85);
+    opacity: 0.8;
+    transition: transform 1s, opacity 1s;
+  }
 }
-.photo-list .prev {
+/* .photo-list .prev {
   transform: translateX(-200px) scale(0.9);
 }
 
 .photo-list .next {
   transform: translateX(200px) scale(0.9);
-}
+} */
 
 .photo-list .hide,
 .photo-list .new-next,
@@ -125,17 +139,22 @@
   transition: opacity 0.1s, transform 1.5s;
 }
 .photo-list .hide {
-  transform: translateX(0px) scale(0.85);
+  width: 1px;
+  /* transform: translateX(0px) scale(0.7); */
 }
 
 .photo-list .new-next,
 .photo-list .new-next-2,
 .photo-list .new-next-3,
 .photo-list .new-next-4 {
-  transform: translateX(0px) scale(0.85);
+  /* height: 1px; */
+  width: 1px;
+  img {
+    transform: scale(0.7);
+  }
 }
 
-.swipe {
+/* .swipe {
   width: 270px;
   height: 200px;
   position: absolute;
@@ -145,7 +164,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-}
+} */
 
 /* E-CAR SECTION : DESKTOP */
 #e-car {
@@ -268,23 +287,19 @@ img {
   }
   .photo-list li {
     list-style-type: none;
-
-    width: 250px;
-    height: 200px;
     opacity: 0.8;
     position: absolute;
-    left: 50%;
-    margin-left: -00px;
+    left: 0%;
     border-radius: 2px;
     transition: transform 1s, opacity 1s;
     text-align: center;
   }
   .photo-list .prev {
-    transform: translateX(-138px) scale(0.7);
+    transform: translateX(-128px) scale(0.7);
   }
 
   .photo-list .next {
-    transform: translateX(108px) scale(0.7);
+    transform: translateX(128px) scale(0.7);
   }
   .project-presentation-left {
     grid-area: text;
