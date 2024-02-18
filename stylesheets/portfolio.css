@@ -33,6 +33,7 @@
     font-family: 'Protest Strike', sans-serif;
     color: black;
     padding-bottom: 15px;
+    font-size: 33px;
   }
   p {
     font-family: 'Popins', sans-serif;
@@ -52,7 +53,7 @@
       padding: 8px;
       margin: 5px;
       color: black;
-      border: 1px solid black;
+      border: 1px solid rgba(255, 255, 255, 0.8);
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
     }
@@ -164,7 +165,7 @@
   grid-template-columns: 1.1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 'images text';
-  background-color: rgba(237, 202, 125, 0.8);
+  background-color: rgba(239, 216, 164, 0.8);
 }
 #laptop-frame img {
   position: relative;
@@ -212,13 +213,14 @@ img {
     font-family: 'Protest Strike', sans-serif;
     color: black;
     padding-bottom: 15px;
+    font-size: 33px;
   }
   p {
     font-family: 'Popins', sans-serif;
   }
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   text-align: justify;
 
   .stack {
@@ -233,7 +235,7 @@ img {
       padding: 8px;
       margin: 5px;
       color: black;
-      border: 1px solid black;
+      border: 1px solid rgba(255, 255, 255, 0.8);
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 10px;
     }
