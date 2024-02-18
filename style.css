@@ -3,23 +3,3 @@
 @import './stylesheets/portfolio.css';
 @import './stylesheets/contact.css';
 @import './stylesheets/footer.css';
-
-/* #navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  background-color: rgb(48, 68, 43);
-  height: 60px;
-  transition: top 0.3s;
-} */
-/* #navigation {
-  display: flex;
-  align-items: flex-end;
-  gap: 3rem;
-  list-style: none;
-  margin-right: 80px;
-  color: white;
-} */

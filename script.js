@@ -1,3 +1,10 @@
+/* SWITCH LANGUAGE ENG-FR*/
+// const lang = document.getElementById('language-toggle');
+// lang.addEventListener('click', (e) => {
+//   $('.eng').classList.add('inactive');
+//   $('.fr').classList.remove('inactive');
+// });
+
 /* SLIDER PROJECTS MOTIONEXP.*/
 const $ = (selector) => {
   return document.querySelector(selector);

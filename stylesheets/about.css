@@ -15,6 +15,36 @@ p {
   font-family: 'Popins', sans-serif;
 }
 
+em {
+  text-decoration: underline;
+}
+
+#resume-download {
+  position: relative;
+  left: 30%;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+#resume-download:hover {
+  text-decoration: none;
+  position: relative;
+  left: 30%;
+  border: 1px solid rgba(204, 61, 61, 0.3);
+  color: white;
+  background-color: rgba(204, 61, 61, 0.2);
+  transition: all 0.3s ease 0s;
+  border-radius: 50%;
+  padding: 20px;
+  border-radius: 50px;
+}
+
 .profile-skils {
   display: flex;
 }
@@ -229,16 +259,21 @@ p {
     .profile-description {
       padding-right: 0px;
     }
-  }
-  .grid-two {
-    align-self: auto;
-    margin-bottom: 12px;
-  }
-  .grid-three {
-    align-self: auto;
-    margin-bottom: 12px;
-  }
-  .grid-four {
-    align-self: auto;
+
+    #resume-download {
+      left: 22%;
+    }
+
+    .grid-two {
+      align-self: auto;
+      margin-bottom: 12px;
+    }
+    .grid-three {
+      align-self: auto;
+      margin-bottom: 12px;
+    }
+    .grid-four {
+      align-self: auto;
+    }
   }
 }
