@@ -53,6 +53,9 @@
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 480px) {
+  #contact {
+    background-position: top;
+  }
   #profile-picture {
     display: none;
   }
