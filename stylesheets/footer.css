@@ -1,0 +1,26 @@
+.footer {
+  background: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0px 50px;
+  color: rgb(210, 206, 206);
+  font-size: 11px;
+
+  span {
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.footer .fa-heart {
+  color: #bc3030;
+}
+
+/* MOBILE DISPLAY */
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 9px;
+  }
+}
