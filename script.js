@@ -5,6 +5,10 @@
 //   $('.fr').classList.remove('inactive');
 // });
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 /* SLIDER PROJECTS MOTIONEXP.*/
 const $ = (selector) => {
   return document.querySelector(selector);

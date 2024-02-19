@@ -245,6 +245,11 @@ img {
 @media screen and (max-width: 480px) {
   .section-title {
     padding: 15px 0;
+    font-size: 35px;
+  }
+
+  h3 {
+    padding-top: 25px;
   }
 }
 /* MOTION EXP. SECTION : MOBILE DISPLAY */
