@@ -15,10 +15,6 @@ p {
   font-family: 'Popins', sans-serif;
 }
 
-em {
-  text-decoration: underline;
-}
-
 #resume-download {
   position: relative;
   left: 30%;
