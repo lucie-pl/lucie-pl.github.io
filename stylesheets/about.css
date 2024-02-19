@@ -14,6 +14,22 @@
 p {
   font-family: 'Popins', sans-serif;
 }
+em {
+  position: relative;
+  color: rgba(192, 60, 60, 0.8);
+}
+em span {
+  position: absolute;
+  display: none;
+  z-index: 99;
+  top: 139%;
+  left: -1250%;
+}
+em:hover span {
+  display: initial;
+  top: 139%;
+  left: -1293%;
+}
 
 #resume-download {
   position: relative;
@@ -211,6 +227,12 @@ p {
 @media screen and (max-width: 480px) {
   #about {
     padding: 45px 0;
+  }
+  em {
+    color: white;
+  }
+  em span {
+    display: none;
   }
   .grid-one {
     display: flex;
