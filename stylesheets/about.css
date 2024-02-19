@@ -45,36 +45,6 @@ em {
   border-radius: 50px;
 }
 
-.profile-skils {
-  display: flex;
-}
-
-.skills-row {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-template-rows: auto auto;
-  grid-gap: 10px;
-  justify-content: space-evenly;
-
-  .skills {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-
-    img {
-      height: 80%;
-      width: 70%;
-    }
-
-    p {
-      display: flex;
-      justify-content: center;
-      font-size: 12px;
-    }
-  }
-}
-
 .grid-one {
   display: grid;
   justify-content: center;
@@ -84,30 +54,29 @@ em {
   grid-template-areas:
     'title1 title2 title2 title2'
     'presentation lt-grid back-grid front-grid';
+}
+.grid-one .presentation-title {
+  grid-area: title1;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 45px;
+}
 
-  .presentation-title {
-    grid-area: title1;
-    text-align: center;
-    padding-bottom: 15px;
-    font-family: 'Protest Strike', sans-serif;
-    font-size: 45px;
-  }
-
-  .profile-description {
-    grid-area: presentation;
-    font-family: 'Popins', sans-serif;
-    padding-right: 30px;
-    margin: auto;
-    text-align: justify;
-  }
-  .skills-title {
-    grid-area: title2;
-    text-align: center;
-    font-family: 'Protest Strike', sans-serif;
-    font-size: 30px;
-    padding-top: 41px;
-    margin-bottom: 0px;
-  }
+.grid-one .profile-description {
+  grid-area: presentation;
+  font-family: 'Popins', sans-serif;
+  padding-right: 30px;
+  margin: auto;
+  text-align: justify;
+}
+.grid-one .skills-title {
+  grid-area: title2;
+  text-align: center;
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 30px;
+  padding-top: 41px;
+  margin-bottom: 0px;
 }
 .grid-two {
   grid-area: lt-grid;
@@ -251,29 +220,28 @@ em {
     display: flex;
     flex-direction: column;
     padding: 0 12px;
+  }
+  .presentation-title {
+    font-size: 34px;
+    padding-bottom: 12px;
+  }
+  .profile-description {
+    padding-right: 0px;
+  }
 
-    .presentation-title {
-      font-size: 34px;
-      padding-bottom: 12px;
-    }
-    .profile-description {
-      padding-right: 0px;
-    }
+  #resume-download {
+    left: 22%;
+  }
 
-    #resume-download {
-      left: 22%;
-    }
-
-    .grid-two {
-      align-self: auto;
-      margin-bottom: 12px;
-    }
-    .grid-three {
-      align-self: auto;
-      margin-bottom: 12px;
-    }
-    .grid-four {
-      align-self: auto;
-    }
+  .grid-two {
+    align-self: auto;
+    margin-bottom: 12px;
+  }
+  .grid-three {
+    align-self: auto;
+    margin-bottom: 12px;
+  }
+  .grid-four {
+    align-self: auto;
   }
 }

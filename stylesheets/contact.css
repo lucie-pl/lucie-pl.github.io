@@ -15,14 +15,13 @@
     'text photo'
     'links photo';
   padding: 50px;
-
-  p {
-    grid-area: text;
-    font-family: 'Popins', sans-serif;
-    text-align: center;
-    padding-left: 50px;
-    color: white;
-  }
+}
+#grid-contact p {
+  grid-area: text;
+  font-family: 'Popins', sans-serif;
+  text-align: center;
+  padding-left: 50px;
+  color: white;
 }
 
 .contact-title {
@@ -46,7 +45,7 @@
   opacity: 0.7;
 }
 
-img {
+#profile-picture {
   grid-area: photo;
   display: flex;
   justify-self: center;
@@ -54,23 +53,18 @@ img {
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 480px) {
-  #contact {
-    img {
-      display: none;
-    }
-
-    #grid-contact {
-      display: flex;
-      flex-direction: column;
-
-      padding: 50px;
-
-      p {
-        grid-area: text;
-        font-family: 'Popins', sans-serif;
-        text-align: center;
-        padding-left: 0;
-      }
-    }
+  #profile-picture {
+    display: none;
+  }
+  #grid-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+  #grid-contact p {
+    grid-area: text;
+    font-family: 'Popins', sans-serif;
+    text-align: center;
+    padding-left: 0;
   }
 }

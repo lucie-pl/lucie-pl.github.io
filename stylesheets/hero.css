@@ -39,16 +39,15 @@ body::-webkit-scrollbar {
   color: white;
   font-family: 'Phudu', sans-serif;
   white-space: nowrap;
-
-  span {
-    font-family: 'Trebuchet MS', sans-serif;
-  }
-  .heading_line-2 {
-    font-size: 6.5vw;
-    line-height: 0.7;
-    margin-bottom: 93px;
-    color: black;
-  }
+}
+.heading span {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.heading .heading_line-2 {
+  font-size: 6.5vw;
+  line-height: 0.7;
+  margin-bottom: 93px;
+  color: black;
 }
 
 .mobile {
@@ -75,66 +74,65 @@ body::-webkit-scrollbar {
   flex-flow: row wrap;
   justify-content: space-evenly;
   padding-top: 31px;
+}
+.cta #action {
+  font-family: 'Popins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 21px;
+  padding-top: 24px;
+  text-decoration: none;
+  position: relative;
+  left: -45%;
+}
 
-  #action {
-    font-family: 'Popins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
-    border: 2px solid white;
-    border-radius: 40px;
-    padding: 21px;
-    padding-top: 24px;
-    text-decoration: none;
-    position: relative;
-    left: -45%;
-  }
+.cta #action:hover {
+  background-color: white;
+  font-family: 'Popins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  border: 2px solid white;
+  transition: 0.4s;
+  border-radius: 40px;
+  padding: 21px;
+  padding-top: 24px;
+  text-decoration: none;
+  position: relative;
+  left: -45%;
+}
 
-  #action:hover {
-    background-color: white;
-    font-family: 'Popins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: black;
-    border: 1px solid white;
-    transition: 0.4s;
-    border-radius: 40px;
-    padding: 21px;
-    padding-top: 24px;
-    text-decoration: none;
-    position: relative;
-    left: -45%;
-  }
+.cta #contact-intro {
+  font-family: 'Popins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 21px;
+  padding-top: 24px;
+  text-decoration: none;
+  position: relative;
+  left: 45%;
+}
 
-  #contact-intro {
-    font-family: 'Popins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
-    border: 2px solid white;
-    border-radius: 40px;
-    padding: 21px;
-    padding-top: 24px;
-    text-decoration: none;
-    position: relative;
-    left: 45%;
-  }
-
-  #contact-intro:hover {
-    background-color: white;
-    font-family: 'Popins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: black;
-    border: 1px solid white;
-    transition: 0.4s;
-    border-radius: 40px;
-    padding: 21px;
-    padding-top: 24px;
-    text-decoration: none;
-    position: relative;
-    left: 45%;
-  }
+.cta #contact-intro:hover {
+  background-color: white;
+  font-family: 'Popins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  border: 2px solid white;
+  transition: 0.4s;
+  border-radius: 40px;
+  padding: 21px;
+  padding-top: 24px;
+  text-decoration: none;
+  position: relative;
+  left: 45%;
 }
 
 /* MOBILE DISPLAY */
@@ -156,42 +154,40 @@ body::-webkit-scrollbar {
     color: white;
     font-family: 'Phudu', sans-serif;
     white-space: nowrap;
-
-    .heading_line-2 {
-      font-size: 11vw;
-      line-height: 0.7;
-      margin-bottom: 93px;
-      margin-top: 12px;
-      color: black;
-    }
+  }
+  .heading .heading_line-2 {
+    font-size: 11vw;
+    line-height: 0.7;
+    margin-bottom: 93px;
+    margin-top: 12px;
+    color: black;
   }
 
   .cta {
     flex-direction: column;
+  }
+  .cta #action {
+    position: unset;
+    font-size: 10px;
+    padding: 18px;
+    margin-bottom: 10px;
+  }
 
-    #action {
-      position: unset;
-      font-size: 10px;
-      padding: 18px;
-      margin-bottom: 10px;
-    }
+  .cta #action:hover {
+    position: unset;
+    font-size: 10px;
+    padding: 18px;
+  }
 
-    #action:hover {
-      position: unset;
-      font-size: 10px;
-      padding: 18px;
-    }
+  .cta #contact-intro {
+    position: unset;
+    font-size: 10px;
+    padding: 18px;
+  }
 
-    #contact-intro {
-      position: unset;
-      font-size: 10px;
-      padding: 18px;
-    }
-
-    #contact-intro:hover {
-      position: unset;
-      font-size: 10px;
-      padding: 18px;
-    }
+  .cta #contact-intro:hover {
+    position: unset;
+    font-size: 10px;
+    padding: 18px;
   }
 }
