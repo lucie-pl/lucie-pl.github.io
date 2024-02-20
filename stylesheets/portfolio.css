@@ -38,6 +38,11 @@
   padding-bottom: 15px;
   font-size: 33px !important;
 }
+.gh-link-motion {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
 .project-presentation-left p {
   font-family: 'Popins', sans-serif;
 }
@@ -220,6 +225,11 @@
   padding-bottom: 15px;
   font-size: 33px;
 }
+.gh-link-ecar {
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
 .project-presentation-right p {
   font-family: 'Popins', sans-serif;
 }
@@ -240,6 +250,40 @@
   border: 1px solid rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+}
+
+/* MINI-GAMES SECTION : DESKTOP */
+#mini-games h3 {
+  font-family: 'Protest Strike', sans-serif;
+  color: black;
+  font-size: 33px;
+  padding-top: 30px;
+}
+#mini-games span {
+  font-family: 'Popins', sans-serif;
+  color: black;
+}
+.game-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  padding: 20px 0px 50px 0px;
+}
+.game {
+  text-align: center;
+  font-family: 'Popins', sans-serif;
+  font-size: 13px;
+}
+
+.game a {
+  text-decoration: none;
+  color: black;
+}
+.carousel-inner {
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  filter: grayscale(20%);
 }
 /** MOBILE DISPLAY **/
 @media screen and (max-width: 480px) {
@@ -304,6 +348,9 @@
     grid-area: text;
     padding-top: 315px;
   }
+  .project-presentation-left h3 {
+    padding-top: 15px;
+  }
   .btn-prev {
     position: absolute;
     top: 28%;
@@ -367,6 +414,9 @@
     grid-area: text;
     padding-top: 315px;
   }
+  .project-presentation-left h3 {
+    padding-top: 15px;
+  }
   .btn-prev {
     position: absolute;
     top: 31%;
@@ -421,5 +471,27 @@
   }
   .dot {
     padding-right: 10px;
+  }
+  .project-presentation-right h3 {
+    padding-top: 15px;
+  }
+}
+
+/* MINI-GAMES SECTION : MOBILE DISPLAY */
+@media screen and (max-width: 480px) {
+  #mini-games h3 {
+    text-align: center;
+  }
+  #mini-games span {
+    display: flex;
+    justify-content: center;
+  }
+  .game-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game {
+    width: 75%;
   }
 }

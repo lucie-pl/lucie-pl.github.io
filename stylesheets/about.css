@@ -15,7 +15,6 @@ p {
   font-family: 'Popins', sans-serif;
 }
 em {
-  position: relative;
   color: rgba(192, 60, 60, 0.8);
 }
 em span {
@@ -27,8 +26,10 @@ em span {
 }
 em:hover span {
   display: initial;
-  top: 139%;
-  left: -1293%;
+  top: 60%;
+  left: 24%;
+  border: 3px solid rgb(164, 14, 14);
+  border-style: outset;
 }
 
 #resume-download {
@@ -81,6 +82,7 @@ em:hover span {
   padding-right: 30px;
   margin: auto;
   text-align: justify;
+  position: relative;
 }
 .grid-one .skills-title {
   grid-area: title2;
