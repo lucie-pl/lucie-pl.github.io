@@ -38,6 +38,11 @@
   padding-bottom: 15px;
   font-size: 33px !important;
 }
+.gh-link-motion {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
 .project-presentation-left p {
   font-family: 'Popins', sans-serif;
 }
@@ -220,6 +225,11 @@
   padding-bottom: 15px;
   font-size: 33px;
 }
+.gh-link-ecar {
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
 .project-presentation-right p {
   font-family: 'Popins', sans-serif;
 }
@@ -265,6 +275,10 @@
   font-size: 13px;
 }
 
+.game a {
+  text-decoration: none;
+  color: black;
+}
 .carousel-inner {
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -334,6 +348,9 @@
     grid-area: text;
     padding-top: 315px;
   }
+  .project-presentation-left h3 {
+    padding-top: 15px;
+  }
   .btn-prev {
     position: absolute;
     top: 28%;
@@ -397,6 +414,9 @@
     grid-area: text;
     padding-top: 315px;
   }
+  .project-presentation-left h3 {
+    padding-top: 15px;
+  }
   .btn-prev {
     position: absolute;
     top: 31%;
@@ -451,6 +471,9 @@
   }
   .dot {
     padding-right: 10px;
+  }
+  .project-presentation-right h3 {
+    padding-top: 15px;
   }
 }
 
