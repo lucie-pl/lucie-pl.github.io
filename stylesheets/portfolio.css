@@ -243,31 +243,34 @@
 }
 
 /* MINI-GAMES SECTION : DESKTOP */
+#mini-games h3 {
+  font-family: 'Protest Strike', sans-serif;
+  color: black;
+  font-size: 33px;
+  padding-top: 30px;
+}
+#mini-games span {
+  font-family: 'Popins', sans-serif;
+  color: black;
+}
 .game-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
-  padding: 50px 0px 50px 0px;
+  padding: 20px 0px 50px 0px;
 }
 .game {
-  flex-direction: column;
-  justify-content: center;
-}
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Popins', sans-serif;
+  font-size: 13px;
 }
 
+.carousel-inner {
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  filter: grayscale(20%);
+}
 /** MOBILE DISPLAY **/
 @media screen and (max-width: 480px) {
   .section-title {
@@ -448,5 +451,24 @@
   }
   .dot {
     padding-right: 10px;
+  }
+}
+
+/* MINI-GAMES SECTION : MOBILE DISPLAY */
+@media screen and (max-width: 480px) {
+  #mini-games h3 {
+    text-align: center;
+  }
+  #mini-games span {
+    display: flex;
+    justify-content: center;
+  }
+  .game-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game {
+    width: 75%;
   }
 }

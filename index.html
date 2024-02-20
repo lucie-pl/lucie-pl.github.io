@@ -317,15 +317,64 @@
             </div>
 
           </div>
-          <div id="mini-games">
-            <div class="container game-cards">
+          <div id="mini-games" class="container">
+            <h3>MINI-GAMES</h3>
+            <span>Practicing while having fun!</span>
+            <div class="game-cards">
               <div class="game">
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+                <div id="rolldice" class="carousel carousel-dark slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#rolldice" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#rolldice" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#rolldice" data-bs-slide-to="2"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/game-projects/RollDice-start.png" alt="RollDice-start" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/game-projects/RollDice-play.png" alt="RollDice-play" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/game-projects/RollDice-win.png" alt="RollDice-win" class="d-block" style="width:100%">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#rolldice" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#rolldice" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
                 </div>
-                <strong>Game:</strong> Roll a dice | <strong>Stack:</strong> Javascript
+                <div>
+                  <strong>Game:</strong> Roll a dice | <strong>Stack:</strong> Javascript
+                </div>
               </div>
-              <div>
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+
+              <div class="game">
+                <div id="guessnumber" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#guessnumber" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#guessnumber" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#guessnumber" data-bs-slide-to="2"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/game-projects/GuessNumber-8bits.png" alt="RollDice-start" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/game-projects/GuessNumber-8bits_win.png" alt="RollDice-play" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/game-projects/GuessNumber-8bits_loose.png" alt="RollDice-win" class="d-block" style="width:100%">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#guessnumber" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#guessnumber" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
                 </div>
                 <strong>Game:</strong> Guess a number | <strong>Stack:</strong> Javascript
               </div>
